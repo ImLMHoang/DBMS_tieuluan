@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:Main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|c:\\users\\imlmh\\source\\repos\\sign in and sign up\\sign in\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:sign in\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\efdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:efdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\model\\seatbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:model\\seatbooking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:model\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\sign up\\fsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:sign up\\fsignup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{74946827-37a0-11d2-a273-00c04f8ef4ff}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAQwLIAAABHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:58:56.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EFDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\EFDbContext.cs",
+              "RelativeDocumentMoniker": "EFDbContext.cs",
+              "ToolTip": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\EFDbContext.cs",
+              "RelativeToolTip": "EFDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T19:48:52.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SeatBooking.cs",
+              "DocumentMoniker": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Model\\SeatBooking.cs",
+              "RelativeDocumentMoniker": "Model\\SeatBooking.cs",
+              "ToolTip": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Model\\SeatBooking.cs",
+              "RelativeToolTip": "Model\\SeatBooking.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T19:48:51.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Model\\Customer.cs",
+              "RelativeDocumentMoniker": "Model\\Customer.cs",
+              "ToolTip": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Model\\Customer.cs",
+              "RelativeToolTip": "Model\\Customer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T19:43:14.882Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "fLogin.cs",
+              "DocumentMoniker": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Sign In\\fLogin.cs",
+              "RelativeDocumentMoniker": "Sign In\\fLogin.cs",
+              "ToolTip": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Sign In\\fLogin.cs",
+              "RelativeToolTip": "Sign In\\fLogin.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwBgAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T18:58:37.751Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "fSignUp.cs",
+              "DocumentMoniker": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Sign Up\\fSignUp.cs",
+              "RelativeDocumentMoniker": "Sign Up\\fSignUp.cs",
+              "ToolTip": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Sign Up\\fSignUp.cs",
+              "RelativeToolTip": "Sign Up\\fSignUp.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEUAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T19:01:34.65Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
