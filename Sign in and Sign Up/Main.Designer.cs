@@ -23,56 +23,30 @@ namespace Sign_in_and_Sign_Up
             }
             base.Dispose(disposing);
         }
+
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            STT = new DataGridViewTextBoxColumn();
-            CustomerName = new DataGridViewTextBoxColumn();
-            SeatNumber = new DataGridViewTextBoxColumn();
-            BookingTime = new DataGridViewTextBoxColumn();
             tableLayoutPanel2 = new TableLayoutPanel();
             label1 = new Label();
             pnlHangGhe = new Panel();
-            textBoxName = new TextBox();
-            dataGridView1 = new DataGridView();
-            label2 = new Label();
             comboBoxShowtime = new ComboBox();
             textBoxSeatNumber = new TextBox();
             buttonSave = new Button();
-            labelName = new Label();
             labelTime = new Label();
             labelGhe = new Label();
-            tableLayoutPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            btnViewBookingDetails = new Button();
+            btnBack = new Button();
+
+            //TextBox CHỈ HIỂN THỊ TÊN PHIM
+            txtMovieTitle = new TextBox();
+            txtMovieTitle.Location = new Point(20, 20);
+            txtMovieTitle.Size = new Size(300, 30);
+            txtMovieTitle.ReadOnly = true;
+            Controls.Add(txtMovieTitle);
+
             SuspendLayout();
-            // 
-            // STT
-            // 
-            STT.HeaderText = "STT";
-            STT.MinimumWidth = 6;
-            STT.Name = "STT";
-            STT.Width = 50;
-            // 
-            // CustomerName
-            // 
-            CustomerName.HeaderText = "Người mua";
-            CustomerName.MinimumWidth = 6;
-            CustomerName.Name = "CustomerName";
-            CustomerName.Width = 150;
-            // 
-            // SeatNumber
-            // 
-            SeatNumber.HeaderText = "Số ghế";
-            SeatNumber.MinimumWidth = 6;
-            SeatNumber.Name = "SeatNumber";
-            SeatNumber.Width = 125;
-            // 
-            // BookingTime
-            // 
-            BookingTime.HeaderText = "Giờ đặt";
-            BookingTime.MinimumWidth = 6;
-            BookingTime.Name = "BookingTime";
-            BookingTime.Width = 150;
+
             // 
             // tableLayoutPanel2
             // 
@@ -88,12 +62,13 @@ namespace Sign_in_and_Sign_Up
             tableLayoutPanel2.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tableLayoutPanel2.Size = new Size(930, 104);
             tableLayoutPanel2.TabIndex = 1;
+
             // 
             // label1
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 19.8000011F, FontStyle.Bold);
+            label1.Font = new Font("Segoe UI", 19.8F, FontStyle.Bold);
             label1.Location = new Point(4, 0);
             label1.Margin = new Padding(4, 0, 4, 0);
             label1.Name = "label1";
@@ -101,6 +76,7 @@ namespace Sign_in_and_Sign_Up
             label1.TabIndex = 0;
             label1.Text = "MÀN ẢNH";
             label1.TextAlign = ContentAlignment.MiddleCenter;
+
             // 
             // pnlHangGhe
             // 
@@ -110,40 +86,7 @@ namespace Sign_in_and_Sign_Up
             pnlHangGhe.Size = new Size(926, 494);
             pnlHangGhe.TabIndex = 2;
             pnlHangGhe.Paint += pnlHangGhe_Paint;
-            // 
-            // textBoxName
-            // 
-            textBoxName.Font = new Font("Segoe UI", 15F);
-            textBoxName.Location = new Point(1228, 395);
-            textBoxName.Margin = new Padding(4);
-            textBoxName.Multiline = true;
-            textBoxName.Name = "textBoxName";
-            textBoxName.Size = new Size(419, 54);
-            textBoxName.TabIndex = 3;
-            textBoxName.Visible = false;
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { STT, CustomerName, SeatNumber, BookingTime });
-            dataGridView1.Location = new Point(989, 96);
-            dataGridView1.Margin = new Padding(4);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(712, 235);
-            dataGridView1.TabIndex = 7;
-            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(1009, 38);
-            label2.Margin = new Padding(4, 0, 4, 0);
-            label2.Name = "label2";
-            label2.Size = new Size(272, 25);
-            label2.TabIndex = 9;
-            label2.Text = "Danh sách người dùng đã đặt vé";
+
             // 
             // comboBoxShowtime
             // 
@@ -153,7 +96,8 @@ namespace Sign_in_and_Sign_Up
             comboBoxShowtime.Name = "comboBoxShowtime";
             comboBoxShowtime.Size = new Size(419, 33);
             comboBoxShowtime.TabIndex = 10;
-            comboBoxShowtime.Visible = false;
+            comboBoxShowtime.Visible = true;
+
             // 
             // textBoxSeatNumber
             // 
@@ -165,7 +109,8 @@ namespace Sign_in_and_Sign_Up
             textBoxSeatNumber.ReadOnly = true;
             textBoxSeatNumber.Size = new Size(113, 56);
             textBoxSeatNumber.TabIndex = 11;
-            textBoxSeatNumber.Visible = false;
+            textBoxSeatNumber.Visible = true;
+
             // 
             // buttonSave
             // 
@@ -177,19 +122,8 @@ namespace Sign_in_and_Sign_Up
             buttonSave.TabIndex = 12;
             buttonSave.Text = "Lưu";
             buttonSave.UseVisualStyleBackColor = false;
-            buttonSave.Visible = false;
             buttonSave.Click += buttonSave_Click;
-            // 
-            // labelName
-            // 
-            labelName.AutoSize = true;
-            labelName.Location = new Point(1082, 414);
-            labelName.Margin = new Padding(4, 0, 4, 0);
-            labelName.Name = "labelName";
-            labelName.Size = new Size(89, 25);
-            labelName.TabIndex = 13;
-            labelName.Text = "Nhập tên:";
-            labelName.Visible = false;
+
             // 
             // labelTime
             // 
@@ -199,8 +133,9 @@ namespace Sign_in_and_Sign_Up
             labelTime.Name = "labelTime";
             labelTime.Size = new Size(202, 25);
             labelTime.TabIndex = 14;
-            labelTime.Text = "Chọn phim và thời gian:";
-            labelTime.Visible = false;
+            labelTime.Text = "Chọn suất chiếu và thời gian:";
+            labelTime.Visible = true;
+
             // 
             // labelGhe
             // 
@@ -211,7 +146,26 @@ namespace Sign_in_and_Sign_Up
             labelGhe.Size = new Size(126, 25);
             labelGhe.TabIndex = 15;
             labelGhe.Text = "Ghế bạn chọn:";
-            labelGhe.Visible = false;
+            labelGhe.Visible = true;
+
+            // 
+            // btnBack
+            // 
+            btnBack.Location = new Point(12, 650);
+            btnBack.Size = new Size(100, 30);
+            btnBack.Text = "Quay về";
+            btnBack.Click += BtnBack_Click;
+            Controls.Add(btnBack);
+
+            // 
+            // btnViewBookingDetails
+            // 
+            btnViewBookingDetails.Size = new Size(290, 50);
+            btnViewBookingDetails.Location = new Point(1228, 20);
+            btnViewBookingDetails.Text = "Xem Chi Tiết Đặt Vé";
+            btnViewBookingDetails.Click += BtnViewBookingDetails_Click;
+            Controls.Add(btnViewBookingDetails);
+
             // 
             // fMain
             // 
@@ -220,13 +174,9 @@ namespace Sign_in_and_Sign_Up
             ClientSize = new Size(1716, 816);
             Controls.Add(labelGhe);
             Controls.Add(labelTime);
-            Controls.Add(labelName);
             Controls.Add(buttonSave);
             Controls.Add(textBoxSeatNumber);
             Controls.Add(comboBoxShowtime);
-            Controls.Add(label2);
-            Controls.Add(dataGridView1);
-            Controls.Add(textBoxName);
             Controls.Add(pnlHangGhe);
             Controls.Add(tableLayoutPanel2);
             FormBorderStyle = FormBorderStyle.FixedDialog;
@@ -238,7 +188,6 @@ namespace Sign_in_and_Sign_Up
             Load += fMain_Load;
             tableLayoutPanel2.ResumeLayout(false);
             tableLayoutPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -248,23 +197,18 @@ namespace Sign_in_and_Sign_Up
         private TableLayoutPanel tableLayoutPanel2;
         private Label label1;
         private Panel pnlHangGhe;
-        private TextBox textBoxName;
-        private DataGridView dataGridView1;
-        private Label label2;
-
-        // Định nghĩa sự kiện trống để tránh lỗi
-        private void pnlHangGhe_Paint(object sender, PaintEventArgs e) { }
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e) { }
-
-        private DataGridViewTextBoxColumn STT;
-        private DataGridViewTextBoxColumn CustomerName;
-        private DataGridViewTextBoxColumn SeatNumber;
-        private DataGridViewTextBoxColumn BookingTime;
         private ComboBox comboBoxShowtime;
         private TextBox textBoxSeatNumber;
         private Button buttonSave;
-        private Label labelName;
         private Label labelTime;
         private Label labelGhe;
+        private TextBox txtMovieTitle;
+        private Button btnViewBookingDetails;
+        private Button btnBack;
+
+        //Vẽ bảng ghế
+        private void pnlHangGhe_Paint(object sender, PaintEventArgs e)
+        {
+        }
     }
 }

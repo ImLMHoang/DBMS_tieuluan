@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Forms",
     "\\Model",
     "\\obj",
+    "\\obj\\Debug",
     "\\Properties",
     "\\Resources",
     "\\Sign In",

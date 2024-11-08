@@ -399,3 +399,5 @@ C:\Users\imlmh\source\repos\Sign in and Sign Up\obj\Debug\net8.0-windows\Sign in
 C:\Users\imlmh\source\repos\Sign in and Sign Up\obj\Debug\net8.0-windows\Sign in .B16772C7.Up2Date
 C:\Users\imlmh\source\repos\Sign in and Sign Up\obj\Debug\net8.0-windows\Sign in and Sign Up.genruntimeconfig.cache
 C:\Users\imlmh\source\repos\Sign in and Sign Up\obj\Debug\net8.0-windows\ref\Sign in and Sign Up.dll
+C:\Users\imlmh\source\repos\Sign in and Sign Up\obj\Debug\net8.0-windows\Sign_in_and_Sign_Up.Forms.fBookingOverview.resources
+C:\Users\imlmh\source\repos\Sign in and Sign Up\obj\Debug\net8.0-windows\Sign_in_and_Sign_Up.Forms.fMovieSelection.resources

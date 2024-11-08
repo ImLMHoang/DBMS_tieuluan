@@ -12,6 +12,8 @@ namespace Sign_in_and_Sign_Up
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Showtime> Showtimes { get; set; }
         public DbSet<SeatBooking> SeatBookings { get; set; }
+        public DbSet<ShowtimeSeat> ShowtimeSeats { get; set; }
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             // Đảm bảo rằng optionsBuilder chưa được cấu hình
@@ -22,15 +24,15 @@ namespace Sign_in_and_Sign_Up
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Customer>().HasData(
-                new Customer
-                {
-                    CustomerID = 1,
-                    FullName = "Default User",
-                    PhoneNumber = 012345678,
-                    Username = "Default",
-                    Password = "Default"
-                });
+            //modelBuilder.Entity<Customer>().HasData(
+            //    new Customer
+            //    {
+            //        CustomerID = 1,
+            //        FullName = "Default User",
+            //        PhoneNumber = 012345678,
+            //        Username = "Default",
+            //        Password = "Default"
+            //    });
         }
     }
 }

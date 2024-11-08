@@ -9,78 +9,160 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using Sign_in_and_Sign_Up.Model;
+using Microsoft.EntityFrameworkCore;
+using Sign_in_and_Sign_Up.Forms;
 
 namespace Sign_in_and_Sign_Up
 {
+
     public partial class fMain : Form
     {
         private string connectionString;
-        private int selectedSeatNumber = -1; // Số ghế người dùng đã chọn
-        public fMain()
+        private int selectedSeatNumber = -1;
+        private string selectedMovieTitle;
+        private int currentCustomerId;
+
+        public fMain(int customerId, string movieTitle)
         {
             InitializeComponent();
             connectionString = ConfigurationManager.ConnectionStrings["db"].ConnectionString;
+            currentCustomerId = customerId;
+            selectedMovieTitle = movieTitle;
+            txtMovieTitle.Text = movieTitle;
+
+            LoadShowtimeOptions(movieTitle);
         }
+
         private void BtnGhe_Click(object? sender, EventArgs e)
         {
-            Button btnGhe = (Button)sender;
-            selectedSeatNumber = int.Parse(btnGhe.Text);
-
-            if (btnGhe.BackColor == Color.Red)
+            Button clickedButton = sender as Button;
+            if (clickedButton != null)
             {
-                MessageBox.Show("Ghế đã được đặt!");
-                return;
+                //Lấy số ghế từ nút đã chọn
+                int seatNumber = int.Parse(clickedButton.Text);
+
+                //Kiểm tra trạng thái của ghế và thay đổi màu sắc tương ứng
+                if (clickedButton.BackColor == Color.White) 
+                {
+                    clickedButton.BackColor = Color.Blue; 
+                    selectedSeatNumber = seatNumber;
+                    textBoxSeatNumber.Text = seatNumber.ToString();
+                }
+                else if (clickedButton.BackColor == Color.Blue) 
+                {
+                    clickedButton.BackColor = Color.White; 
+                    selectedSeatNumber = -1; //Reset lại biến selectedSeatNumber
+                    textBoxSeatNumber.Clear(); //Xóa nội dung hiển thị số ghế đã chọn
+                }
             }
-
-            // Hiển thị các ô nhập liệu và điền số ghế
-            textBoxName.Visible = true;
-            comboBoxShowtime.Visible = true;
-            textBoxSeatNumber.Visible = true;
-            buttonSave.Visible = true;
-            labelName.Visible = true;
-            labelTime.Visible = true;
-            labelGhe.Visible = true;
-
-            textBoxSeatNumber.Text = selectedSeatNumber.ToString();
         }
-        private void KhoiTaoSoGhe(int dong, int cot)
+        private void LoadSeatsForShowtime(int showtimeId)
         {
+            pnlHangGhe.Controls.Clear(); //Xóa ghế cũ
+
             int x, y = 20, khoangCach = 100, dem = 1;
-            for (int i = 0; i < dong; i++)
+            for (int i = 0; i < 5; i++) //5 hàng ghế
             {
                 x = 3;
-
-                for (int j = 0; j < cot; j++)
+                for (int j = 0; j < 7; j++)//7 cột ghế
                 {
                     Button btnGhe = new Button();
                     btnGhe.Location = new Point(x, y);
                     btnGhe.Size = new Size(90, 60);
                     btnGhe.Text = dem++.ToString();
                     btnGhe.BackColor = Color.White;
-                    pnlHangGhe.Controls.Add(btnGhe);
                     btnGhe.Click += BtnGhe_Click;
+
+                    int seatNumber = int.Parse(btnGhe.Text);
+
+                    
+                    using (var context = new EFDbContext())
+                    {
+                        var seatBooking = context.SeatBookings
+                            .FirstOrDefault(s => s.ShowtimeID == showtimeId && s.SeatNumber == seatNumber);
+
+                        if (seatBooking != null)
+                        {
+                            if (seatBooking.CustomerID == currentCustomerId)
+                            {
+                                //Ghế đặt bởi người dùng hiện tại
+                                btnGhe.BackColor = Color.Yellow; //Màu vàng
+                            }
+                            else
+                            {
+                                //Ghế đặt bởi người dùng khác
+                                btnGhe.BackColor = Color.Red; // Màu đỏ
+                                //btnGhe.Enabled = false; //Không cho current-cus-id chọn ghế này
+                            }
+                        }
+                    }
+
+                    pnlHangGhe.Controls.Add(btnGhe);
                     x += khoangCach;
                 }
                 y += khoangCach;
             }
         }
 
-        private void LoadShowtimeOptions()
+        private void BookSeat(int showtimeId, int seatNumber, int customerId)
         {
+            using (var context = new EFDbContext())
+            {
+                try
+                {
+                    var result = context.Database.ExecuteSqlRaw(
+                        "EXEC sp_BookSeat @SeatNumber = {0}, @ShowtimeID = {1}, @CustomerID = {2}",
+                        seatNumber, showtimeId, customerId);
+
+                    MessageBox.Show("Đặt ghế thành công!");
+
+                    //Cập nhật trạng thái ghế sau khi đặt
+                    LoadSeatsForShowtime(showtimeId);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi khi đặt ghế: " + ex.Message);
+                }
+            }
+        }
+
+        private class ShowtimeItem
+        {
+            public int ShowtimeID { get; set; }
+            public string DisplayText { get; set; }
+
+            public override string ToString()
+            {
+                return DisplayText;
+            }
+        }
+
+        private void LoadShowtimeOptions(string movieTitle) 
+        {
+            comboBoxShowtime.Items.Clear();
+
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 try
                 {
                     conn.Open();
-                    string query = "SELECT ShowtimeID, StartTime FROM Showtime";
+                    string query = "SELECT ShowtimeID, StartTime FROM Showtimes WHERE MovieTitle = @MovieTitle";
                     SqlCommand cmd = new SqlCommand(query, conn);
+                    cmd.Parameters.AddWithValue("@MovieTitle", movieTitle);
                     SqlDataReader reader = cmd.ExecuteReader();
 
                     while (reader.Read())
                     {
                         int showtimeId = reader.GetInt32(0);
                         DateTime startTime = reader.GetDateTime(1);
-                        comboBoxShowtime.Items.Add(new { ShowtimeID = showtimeId, Time = startTime.ToString("yyyy-MM-dd HH:mm") });
+
+                        //ShowtimeItem lưu trữ ShowtimeID và DisplayText
+                        comboBoxShowtime.Items.Add(new ShowtimeItem
+                        {
+                            ShowtimeID = showtimeId,
+                            DisplayText = startTime.ToString("yyyy-MM-dd HH:mm")
+                        });
                     }
 
                     reader.Close();
@@ -90,140 +172,104 @@ namespace Sign_in_and_Sign_Up
                     MessageBox.Show("Lỗi khi tải danh sách giờ chiếu: " + ex.Message);
                 }
             }
+
+            //Đặt mục đầu tiên trong comboBoxShowtime nếu có dữ liệu
+            if (comboBoxShowtime.Items.Count > 0)
+            {
+                comboBoxShowtime.SelectedIndex = 0;
+            }
+
+            comboBoxShowtime.DisplayMember = "DisplayText"; //Hiển thị DisplayText của ShowtimeItem trong ComboBox
         }
 
-        private void LoadBookingData()
+
+        private void comboBoxShowtime_SelectedIndexChanged(object sender, EventArgs e)
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            if (comboBoxShowtime.SelectedItem != null)
             {
-                try
+                var selectedShowtime = comboBoxShowtime.SelectedItem as ShowtimeItem;
+                if (selectedShowtime != null)
                 {
-                    conn.Open();
-                    string query = @"
-                SELECT 
-                    ROW_NUMBER() OVER (ORDER BY sb.BookingID) AS STT,
-                    c.FullName AS CustomerName,
-                    sb.SeatNumber,
-                    sb.BookingTime
-                FROM SeatBooking sb
-                JOIN Customers c ON sb.CustomerID = c.CustomerID
-                WHERE sb.Status = 'Đã đặt'";
-
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    SqlDataReader reader = cmd.ExecuteReader();
-
-                    dataGridView1.Rows.Clear();
-                    List<int> bookedSeats = new List<int>();
-
-                    while (reader.Read())
-                    {
-                        int stt = (int)reader.GetInt64(0);
-                        string customerName = reader.GetString(1);
-                        int seatNumber = reader.GetInt32(2);
-                        DateTime bookingTime = reader.GetDateTime(3);
-
-                        // Thêm số ghế đã đặt vào danh sách
-                        bookedSeats.Add(seatNumber);
-
-                        // Thêm dữ liệu vào DataGridView
-                        dataGridView1.Rows.Add(stt, customerName, seatNumber, bookingTime);
-                    }
-                    reader.Close();
-
-                    // Đổi màu ghế đã đặt thành màu đỏ
-                    foreach (Control control in pnlHangGhe.Controls)
-                    {
-                        if (control is Button btnGhe)
-                        {
-                            int seatNum = int.Parse(btnGhe.Text);
-                            if (bookedSeats.Contains(seatNum))
-                            {
-                                btnGhe.BackColor = Color.Red;
-                                btnGhe.Enabled = false; // Vô hiệu hóa nút ghế đã đặt
-                            }
-                        }
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
+                    int showtimeId = selectedShowtime.ShowtimeID;
+                    LoadSeatsForShowtime(showtimeId); //Tải và hiển thị ghế cho suất chiếu đã chọn
                 }
             }
         }
+
+
+        //
+        //relatedtofBookingOverview
+        //
+        private void BtnViewBookingDetails_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+            //Khởi tạo và mở form fBookingOverview
+            fBookingOverview bookingOverviewForm = new fBookingOverview(currentCustomerId);
+
+            bookingOverviewForm.ShowDialog();
+
+            //Hiện form chính khi fBookingOverview đóng
+            this.Show();
+        }
+
+
 
         private void buttonSave_Click(object sender, EventArgs e)
         {
-            string customerName = textBoxName.Text;
-            var selectedShowtime = comboBoxShowtime.SelectedItem as dynamic;
-
-            if (string.IsNullOrEmpty(customerName) || selectedShowtime == null || selectedSeatNumber == -1)
+            if (selectedSeatNumber == -1)
             {
-                MessageBox.Show("Vui lòng nhập đủ thông tin.");
+                MessageBox.Show("Vui lòng chọn ghế trước khi lưu!");
                 return;
             }
 
+            //Lấy ShowtimeID từ comboBoxShowtime 
+            var selectedShowtime = (dynamic)comboBoxShowtime.SelectedItem;
             int showtimeId = selectedShowtime.ShowtimeID;
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            try
             {
-                try
-                {
-                    conn.Open();
+                //Gọi hàm BookSeat để thực hiện đặt ghế với stored procedure
+                BookSeat(showtimeId, selectedSeatNumber, currentCustomerId);
 
-                    // Thêm thông tin khách hàng vào bảng Customer nếu chưa tồn tại
-                    SqlCommand cmdCustomer = new SqlCommand("IF NOT EXISTS (SELECT * FROM Customers WHERE FullName = @Name) INSERT INTO Customers (FullName) VALUES (@Name); SELECT CustomerID FROM Customers WHERE FullName = @Name;", conn);
-                    cmdCustomer.Parameters.AddWithValue("@Name", customerName);
-                    int customerId = (int)cmdCustomer.ExecuteScalar();
-
-                    // Gọi Stored Procedure để đặt ghế
-                    SqlCommand cmdBooking = new SqlCommand("sp_BookSeat", conn);
-                    cmdBooking.CommandType = CommandType.StoredProcedure;
-                    cmdBooking.Parameters.AddWithValue("@SeatNumber", selectedSeatNumber);
-                    cmdBooking.Parameters.AddWithValue("@ShowtimeID", showtimeId);
-                    cmdBooking.Parameters.AddWithValue("@CustomerID", customerId);
-
-                    int result = cmdBooking.ExecuteNonQuery();
-
-                    if (result > 0)
-                    {
-                        // Cập nhật màu ghế sau khi đặt thành công
-                        foreach (Control control in pnlHangGhe.Controls)
-                        {
-                            if (control is Button btn && int.Parse(btn.Text) == selectedSeatNumber)
-                            {
-                                btn.BackColor = Color.Red;
-                                btn.Enabled = false;
-                            }
-                        }
-                        MessageBox.Show("Đặt ghế thành công!");
-                        LoadBookingData();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Ghế đã được đặt bởi người khác!");
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message);
-                }
+                // Cập nhật trạng thái ghế để hiển thị trên giao diện
+                LoadSeatsForShowtime(showtimeId);
             }
-
-            // Ẩn các điều khiển nhập liệu sau khi lưu xong
-            textBoxName.Visible = false;
-            comboBoxShowtime.Visible = false;
-            textBoxSeatNumber.Visible = false;
-            buttonSave.Visible = false;
-            labelName.Visible = false;
-            labelTime.Visible = false;
-            labelGhe.Visible = false;
+            catch (Exception ex)
+            {
+                MessageBox.Show("Có lỗi xảy ra khi đặt ghế: " + ex.Message);
+            }
         }
 
         private void fMain_Load(object sender, EventArgs e)
         {
-            KhoiTaoSoGhe(5, 7); // Khởi tạo 5 hàng và 7 cột ghế
-            LoadBookingData(); // Tải dữ liệu đặt vé vào dataGridView1 khi mở form
-            LoadShowtimeOptions(); // Tải các tùy chọn giờ chiếu vào ComboBox
+            LoadShowtimeOptions(selectedMovieTitle);
+            comboBoxShowtime.SelectedIndexChanged += comboBoxShowtime_SelectedIndexChanged;
+
+            //Kiểm tra và thiết lập mục đầu tiên nếu có
+            if (comboBoxShowtime.Items.Count > 0)
+            {
+                comboBoxShowtime.SelectedIndex = 0; //Chọn mục đầu tiên
+
+                //Lấy đối tượng SelectedItem và chuyển thành kiểu dynamic để lấy ShowtimeID
+                var selectedShowtime = (dynamic)comboBoxShowtime.SelectedItem;
+
+                if (selectedShowtime != null)
+                {
+                    int showtimeId = selectedShowtime.ShowtimeID;
+                    LoadSeatsForShowtime(showtimeId); //Gọi hàm với tham số showtimeId hợp lệ
+                }
+            }
         }
+
+        private void BtnBack_Click(object sender, EventArgs e)
+        {
+            fMovieSelection movieSelectionForm = new fMovieSelection(currentCustomerId);
+            movieSelectionForm.Show();
+
+            //Ẩn fMain để về màn hình chọn phim
+            this.Hide();
+        }
+
     }
 }

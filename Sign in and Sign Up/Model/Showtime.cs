@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Sign_in_and_Sign_Up.Model
 {
-    internal class Showtime
+    public class Showtime
     {
         [Key]
         public int ShowtimeID { get; set; } // Mã suất chiếu (Khóa chính)
