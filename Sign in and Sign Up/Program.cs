@@ -1,3 +1,5 @@
+using Sign_in_and_Sign_Up.LoginAdmin;
+
 namespace Sign_in_and_Sign_Up
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace Sign_in_and_Sign_Up
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new fLogin());
+            Application.Run(new Dangnhapadmin());
         }
     }
 }

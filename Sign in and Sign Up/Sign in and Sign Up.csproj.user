@@ -7,6 +7,15 @@
     <Compile Update="Forms\fMovieSelection.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="LoginAdmin\Index.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginAdmin\Quanlylvedmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginAdmin\Quanlylichadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -14,6 +23,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Sign Up\fSignUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginAdmin\Dangnhapadmin.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

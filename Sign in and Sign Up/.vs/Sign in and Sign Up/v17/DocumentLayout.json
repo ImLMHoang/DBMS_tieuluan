@@ -1,18 +1,74 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|c:\\users\\imlmh\\source\\repos\\sign in and sign up\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|c:\\users\\hp\\source\\repos\\imlmhoang\\dbms_tieuluan\\sign in and sign up\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\loginadmin\\quanlylvedmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:loginadmin\\quanlylvedmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\loginadmin\\quanlylichadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:loginadmin\\quanlylichadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\loginadmin\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:loginadmin\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\loginadmin\\quanlylvedmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:loginadmin\\quanlylvedmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\loginadmin\\quanlylichadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:loginadmin\\quanlylichadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\loginadmin\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:loginadmin\\index.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\loginadmin\\quanlylichadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:loginadmin\\quanlylichadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\sign in\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:sign in\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\sign in\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:sign in\\flogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\loginadmin\\dangnhapadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:loginadmin\\dangnhapadmin.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\loginadmin\\dangnhapadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:loginadmin\\dangnhapadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\loginadmin\\dangnhapadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:loginadmin\\dangnhapadmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\sign in and sign up.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:sign in and sign up.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|c:\\users\\imlmh\\source\\repos\\sign in and sign up\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|c:\\users\\imlmh\\source\\repos\\sign in and sign up\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{21A5673F-58AE-4A95-8106-200CDFED1210}|Sign in and Sign Up.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +78,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
@@ -42,53 +98,215 @@
             },
             {
               "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Quanlylvedmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Quanlylvedmin.cs",
+              "RelativeDocumentMoniker": "LoginAdmin\\Quanlylvedmin.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Quanlylvedmin.cs [Design]",
+              "RelativeToolTip": "LoginAdmin\\Quanlylvedmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T06:21:13.237Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Main.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Main.Designer.cs",
-              "RelativeDocumentMoniker": "Main.Designer.cs",
-              "ToolTip": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Main.Designer.cs",
-              "RelativeToolTip": "Main.Designer.cs",
-              "ViewState": "AQIAAHsAAAAAAAAAAAAYwIcAAAAtAAAA",
+              "Title": "Quanlylvedmin.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Quanlylvedmin.cs",
+              "RelativeDocumentMoniker": "LoginAdmin\\Quanlylvedmin.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Quanlylvedmin.cs",
+              "RelativeToolTip": "LoginAdmin\\Quanlylvedmin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T02:41:51.448Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Main.cs",
-              "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Main.cs",
-              "RelativeToolTip": "Main.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAYwFUAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T02:39:39.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-14T07:27:25.838Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Main.cs",
-              "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "C:\\Users\\imlmh\\source\\repos\\Sign in and Sign Up\\Main.cs [Design]",
-              "RelativeToolTip": "Main.cs [Design]",
+              "Title": "Quanlylichadmin.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Quanlylichadmin.cs",
+              "RelativeDocumentMoniker": "LoginAdmin\\Quanlylichadmin.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Quanlylichadmin.cs",
+              "RelativeToolTip": "LoginAdmin\\Quanlylichadmin.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAD4vzYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T02:39:35.718Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-11-09T10:54:18.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Index.cs",
+              "RelativeDocumentMoniker": "LoginAdmin\\Index.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Index.cs [Design]",
+              "RelativeToolTip": "LoginAdmin\\Index.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T09:58:06.519Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T09:23:40.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Quanlylichadmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Quanlylichadmin.cs",
+              "RelativeDocumentMoniker": "LoginAdmin\\Quanlylichadmin.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Quanlylichadmin.cs [Design]",
+              "RelativeToolTip": "LoginAdmin\\Quanlylichadmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:22:36.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Index.cs",
+              "RelativeDocumentMoniker": "LoginAdmin\\Index.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Index.cs",
+              "RelativeToolTip": "LoginAdmin\\Index.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAIA/wBwAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T09:58:16.358Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Quanlylichadmin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Quanlylichadmin.Designer.cs",
+              "RelativeDocumentMoniker": "LoginAdmin\\Quanlylichadmin.Designer.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Quanlylichadmin.Designer.cs",
+              "RelativeToolTip": "LoginAdmin\\Quanlylichadmin.Designer.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:27:23.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "fLogin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Sign In\\fLogin.cs",
+              "RelativeDocumentMoniker": "Sign In\\fLogin.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Sign In\\fLogin.cs [Design]",
+              "RelativeToolTip": "Sign In\\fLogin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T10:32:24.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "fLogin.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Sign In\\fLogin.cs",
+              "RelativeDocumentMoniker": "Sign In\\fLogin.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Sign In\\fLogin.cs",
+              "RelativeToolTip": "Sign In\\fLogin.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-14T07:04:02.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\App.config",
+              "RelativeDocumentMoniker": "App.config",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\App.config",
+              "RelativeToolTip": "App.config",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-14T07:04:29.865Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Dangnhapadmin.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Dangnhapadmin.Designer.cs",
+              "RelativeDocumentMoniker": "LoginAdmin\\Dangnhapadmin.Designer.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Dangnhapadmin.Designer.cs",
+              "RelativeToolTip": "LoginAdmin\\Dangnhapadmin.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T10:32:35.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Dangnhapadmin.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Dangnhapadmin.cs",
+              "RelativeDocumentMoniker": "LoginAdmin\\Dangnhapadmin.cs",
+              "ToolTip": "C:\\Users\\HP\\Source\\Repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Dangnhapadmin.cs [Design]",
+              "RelativeToolTip": "LoginAdmin\\Dangnhapadmin.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T09:12:14.777Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Dangnhapadmin.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Dangnhapadmin.cs",
+              "RelativeDocumentMoniker": "LoginAdmin\\Dangnhapadmin.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\LoginAdmin\\Dangnhapadmin.cs",
+              "RelativeToolTip": "LoginAdmin\\Dangnhapadmin.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAwBsAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T08:31:07.534Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Sign in and Sign Up.csproj",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Sign in and Sign Up.csproj",
+              "RelativeDocumentMoniker": "Sign in and Sign Up.csproj",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Sign in and Sign Up.csproj",
+              "RelativeToolTip": "Sign in and Sign Up.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-09T08:28:37.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Main.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Main.Designer.cs",
+              "RelativeDocumentMoniker": "Main.Designer.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Main.Designer.cs",
+              "RelativeToolTip": "Main.Designer.cs",
+              "ViewState": "AQIAAHsAAAAAAAAAAAAYwIcAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T02:41:51.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\HP\\source\\repos\\ImLMHoang\\DBMS_tieuluan\\Sign in and Sign Up\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AQIAANYAAAAAAAAAAAAcwOEAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T02:39:39.139Z"
             }
           ]
         }
