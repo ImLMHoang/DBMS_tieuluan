@@ -49,10 +49,9 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 15F);
             label2.ForeColor = Color.DodgerBlue;
-            label2.Location = new Point(28, 261);
-            label2.Margin = new Padding(4, 0, 4, 0);
+            label2.Location = new Point(22, 209);
             label2.Name = "label2";
-            label2.Size = new Size(222, 41);
+            label2.Size = new Size(185, 35);
             label2.TabIndex = 2;
             label2.Text = "Tên đăng nhập:";
             // 
@@ -61,10 +60,9 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 15F);
             label3.ForeColor = Color.DodgerBlue;
-            label3.Location = new Point(97, 336);
-            label3.Margin = new Padding(4, 0, 4, 0);
+            label3.Location = new Point(78, 269);
             label3.Name = "label3";
-            label3.Size = new Size(149, 41);
+            label3.Size = new Size(123, 35);
             label3.TabIndex = 3;
             label3.Text = "Mật khẩu:";
             // 
@@ -73,36 +71,32 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 20F, FontStyle.Bold);
             label1.ForeColor = Color.DodgerBlue;
-            label1.Location = new Point(638, 5);
-            label1.Margin = new Padding(4, 0, 4, 0);
+            label1.Location = new Point(510, 4);
             label1.Name = "label1";
-            label1.Size = new Size(182, 54);
+            label1.Size = new Size(153, 46);
             label1.TabIndex = 4;
             label1.Text = "Đăng Ký";
             // 
             // txtUsername
             // 
-            txtUsername.Location = new Point(310, 261);
-            txtUsername.Margin = new Padding(4, 4, 4, 4);
+            txtUsername.Location = new Point(248, 209);
             txtUsername.Name = "txtUsername";
-            txtUsername.Size = new Size(636, 31);
+            txtUsername.Size = new Size(510, 27);
             txtUsername.TabIndex = 5;
             // 
             // txtPassword
             // 
-            txtPassword.Location = new Point(310, 336);
-            txtPassword.Margin = new Padding(4, 4, 4, 4);
+            txtPassword.Location = new Point(248, 269);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(636, 31);
+            txtPassword.Size = new Size(510, 27);
             txtPassword.TabIndex = 6;
             // 
             // btSignUp
             // 
             btSignUp.ForeColor = Color.DodgerBlue;
-            btSignUp.Location = new Point(609, 541);
-            btSignUp.Margin = new Padding(4, 4, 4, 4);
+            btSignUp.Location = new Point(487, 433);
             btSignUp.Name = "btSignUp";
-            btSignUp.Size = new Size(262, 58);
+            btSignUp.Size = new Size(210, 46);
             btSignUp.TabIndex = 7;
             btSignUp.Text = "Đăng ký";
             btSignUp.UseVisualStyleBackColor = true;
@@ -111,10 +105,9 @@
             // btReturn
             // 
             btReturn.ForeColor = Color.DodgerBlue;
-            btReturn.Location = new Point(168, 551);
-            btReturn.Margin = new Padding(4, 4, 4, 4);
+            btReturn.Location = new Point(134, 441);
             btReturn.Name = "btReturn";
-            btReturn.Size = new Size(262, 58);
+            btReturn.Size = new Size(210, 46);
             btReturn.TabIndex = 8;
             btReturn.Text = "Quay lại";
             btReturn.UseVisualStyleBackColor = true;
@@ -126,10 +119,9 @@
             ckShow.Checked = true;
             ckShow.CheckState = CheckState.Checked;
             ckShow.ForeColor = Color.DodgerBlue;
-            ckShow.Location = new Point(1022, 336);
-            ckShow.Margin = new Padding(4, 4, 4, 4);
+            ckShow.Location = new Point(818, 269);
             ckShow.Name = "ckShow";
-            ckShow.Size = new Size(153, 29);
+            ckShow.Size = new Size(126, 24);
             ckShow.TabIndex = 9;
             ckShow.Text = "Xem mật khẩu";
             ckShow.UseVisualStyleBackColor = true;
@@ -138,10 +130,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.hello_2488_256;
-            pictureBox1.Location = new Point(638, 63);
-            pictureBox1.Margin = new Padding(4, 4, 4, 4);
+            pictureBox1.Location = new Point(510, 50);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(192, 174);
+            pictureBox1.Size = new Size(154, 139);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 10;
             pictureBox1.TabStop = false;
@@ -152,19 +143,17 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 15F);
             label4.ForeColor = Color.DodgerBlue;
-            label4.Location = new Point(19, 398);
-            label4.Margin = new Padding(4, 0, 4, 0);
+            label4.Location = new Point(15, 318);
             label4.Name = "label4";
-            label4.Size = new Size(227, 41);
+            label4.Size = new Size(189, 35);
             label4.TabIndex = 11;
             label4.Text = "Phone Number:";
             // 
             // txtPhoneNumber
             // 
-            txtPhoneNumber.Location = new Point(310, 408);
-            txtPhoneNumber.Margin = new Padding(4);
+            txtPhoneNumber.Location = new Point(248, 326);
             txtPhoneNumber.Name = "txtPhoneNumber";
-            txtPhoneNumber.Size = new Size(636, 31);
+            txtPhoneNumber.Size = new Size(510, 27);
             txtPhoneNumber.TabIndex = 12;
             // 
             // label5
@@ -172,26 +161,24 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 15F);
             label5.ForeColor = Color.DodgerBlue;
-            label5.Location = new Point(88, 469);
-            label5.Margin = new Padding(4, 0, 4, 0);
+            label5.Location = new Point(70, 375);
             label5.Name = "label5";
-            label5.Size = new Size(158, 41);
+            label5.Size = new Size(132, 35);
             label5.TabIndex = 13;
             label5.Text = "Full Name:";
             // 
             // txtFullName
             // 
-            txtFullName.Location = new Point(310, 479);
-            txtFullName.Margin = new Padding(4);
+            txtFullName.Location = new Point(248, 383);
             txtFullName.Name = "txtFullName";
-            txtFullName.Size = new Size(636, 31);
+            txtFullName.Size = new Size(510, 27);
             txtFullName.TabIndex = 14;
             // 
             // fSignUp
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1367, 676);
+            ClientSize = new Size(1094, 541);
             Controls.Add(txtFullName);
             Controls.Add(label5);
             Controls.Add(txtPhoneNumber);
@@ -205,7 +192,6 @@
             Controls.Add(label1);
             Controls.Add(label3);
             Controls.Add(label2);
-            Margin = new Padding(4, 4, 4, 4);
             Name = "fSignUp";
             Text = "Đăng Ký";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dangnhapadmin));
             pictureBox1 = new PictureBox();
             label1 = new Label();
             txtAdminName = new TextBox();
@@ -40,9 +41,12 @@
             // 
             // pictureBox1
             // 
+            pictureBox1.ErrorImage = (Image)resources.GetObject("pictureBox1.ErrorImage");
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(320, 42);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(162, 153);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
@@ -115,6 +119,7 @@
             Controls.Add(pictureBox1);
             Name = "Dangnhapadmin";
             Text = "Trangchuadmin";
+            Load += Dangnhapadmin_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

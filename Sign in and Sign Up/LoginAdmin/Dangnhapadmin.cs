@@ -52,5 +52,10 @@ namespace Sign_in_and_Sign_Up
                 }
             }
         }
+
+        private void Dangnhapadmin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
